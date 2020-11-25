@@ -31,6 +31,8 @@ An advanced workshop on Sky130 which deals with RTL to GDSII design flow. This w
  
  ![Assembler ->  Hardware RTL -> Netlist -> P & R layout ](Snippets/7HARDWAREDESCR.jpg)
  
+ ![DESIGN FLOW](Snippets/9RTL2GDSII.jpg)
+ 
  
 
 
