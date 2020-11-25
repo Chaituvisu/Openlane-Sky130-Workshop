@@ -29,9 +29,15 @@ An advanced workshop on Sky130 which deals with RTL to GDSII design flow. This w
   
  ![](Snippets/6software.jpg)
  
- ![Assembler ->  Hardware RTL -> Netlist -> P & R layout ](Snippets/7HARDWAREDESCR.jpg)
+ ![](Snippets/7HARDWAREDESCR.jpg)
  
- ![DESIGN FLOW](Snippets/9RTL2GDSII.jpg)
+ 
+   Basic RTL is converted to circuit, out of components from standard cell library. These library cells are typically regular layouts with fixed height in a rectangle. Each cell has different views/models
+   In floor planning, partition the chip die between different system building blocks and IO pads. Macros floor planning dimensions, pin locations, rows definitions. Power planning is done on upper metal layers because those are thicker than lower metal layers. Hence less resistance for power loss. 
+   Placement is done in two steps: global & detailed.  Global finds optimal position for all cells.
+   
+   
+ ![](Snippets/9RTL2GDSII.jpg)
  
  
 
