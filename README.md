@@ -39,6 +39,8 @@ An advanced workshop on Sky130 which deals with RTL to GDSII design flow. This w
    
  ![](Snippets/9RTL2GDSII.jpg)
  
+ ![](Snippets/10power_planning.jpg)
+ 
  
 
 
