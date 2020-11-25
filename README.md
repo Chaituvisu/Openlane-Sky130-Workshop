@@ -20,5 +20,17 @@ An advanced workshop on Sky130 which deals with RTL to GDSII design flow. This w
    
 ![](Snippets/3core.bmp)
 
+   
+   RISC-V architecture has interface with different modules like analogue IPs, macros like digital blocks, SRAM, ADCs and DACs. These all are designed using verilog(.v file) and these files are usually RTL files which are used to generate netlist which further used for generation placement & routing. Placement and routing is done which also includes floor planning and power planning.
+   
+  ![](Snippets/4risc-v.bmp)
+  
+  All the apps are written in C language which is not understood by machine or processor. This language is converted into binary/ assemble language. In order to make processor understand the process, there is interface that is present in between RISC-V and layout flow is hardware/physical layer which deals with verilog hardware language. In this process, processor spec using RTL generates netlist and using library files & tech files and finally P&R flow is implemented
+  
+ ![](Snippets/6software.jpg)
+ 
+ ![Assembler ->  Hardware RTL -> Netlist -> P & R layout ](Snippets/7HARDWAREDESCR.jpg)
+ 
+ 
 
 
