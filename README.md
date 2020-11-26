@@ -48,3 +48,5 @@ An advanced workshop on Sky130 which deals with RTL to GDSII design flow. This w
  
  ![](Snippets/Day1Synthesis_1.png)
 
+
+![](Snippets/Day2_floorplan.png)
