@@ -52,3 +52,11 @@ An advanced workshop on Sky130 which deals with RTL to GDSII design flow. This w
 ## 2. Floorplanning
 
 ![](Snippets/Day2_floorplan.png)
+
+![](Snippets/Day2_Floorplan_Area.png)
+
+![](Snippets/Day2_Floorplan_Vmetal.png)
+
+![](Snippets/Day2_Floorplan_HMetal.png)
+
+![](Snippets/Day2_Floorplan_STDCELL.png)
