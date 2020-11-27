@@ -60,3 +60,24 @@ An advanced workshop on Sky130 which deals with RTL to GDSII design flow. This w
 ![](Snippets/Day2_Floorplan_HMetal.png)
 
 ![](Snippets/Day2_Floorplan_STDCELL.png)
+
+
+## 3. STANDARD CELL_INVERTER LAYOUT
+
+   Git clone the standard cell from VSDSTDCELL design
+   
+![](Snippets/GIT_CLONE_vsdstdcell.JPG)
+
+   Enabling the IO pins using a switch with a parameter called  FP_IO_MODE
+   
+![](Snippets/FP_IO_MODE_ENABLE.JPG)
+
+   Identifying Multiple layers of inverter in tcl command promt
+   
+![](Snippets/INV_LAYOUT_layers.JPG)
+
+   Identification of NMOS and PMOS in LAYOUT:
+   
+ ![](Snippets/nmos.JPG)
+ 
+ ![](Snippets/pmos.JPG)
