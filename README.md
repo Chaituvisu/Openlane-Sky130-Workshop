@@ -87,6 +87,7 @@ An advanced workshop on Sky130 which deals with RTL to GDSII design flow. This w
  
  ![](Snippets/pmos.JPG)
  
- ### CELL_TRANS CHARACTERISTICS
+ 
+ ### STANDARD CELL- INVERTER_TRANS CHARACTERISTICS
  
  ![](Snippets/INV_TRANS.JPG)
