@@ -4,7 +4,7 @@ An advanced workshop on Sky130 which deals with RTL to GDSII design flow. This w
    # Contents:
    ### 1. Introduction to SoC and Synthesis
    ### 2. FLOORPLANNING  
-   ### 3. STANDARD CELL_INVERTER LAYOUT
+   ### 3. STANDARD CELL_INVERTER LAYOUT & DRC
    ### 4. Day 4
    ### 5. Day 5
 
@@ -62,7 +62,7 @@ An advanced workshop on Sky130 which deals with RTL to GDSII design flow. This w
 ![](Snippets/Day2_Floorplan_STDCELL.png)
 
 
-## 3. STANDARD CELL_INVERTER LAYOUT
+## 3. STANDARD CELL_INVERTER LAYOUT & DRC
 
    ### Git clone the standard cell from VSDSTDCELL design
    
@@ -86,3 +86,7 @@ An advanced workshop on Sky130 which deals with RTL to GDSII design flow. This w
  ![](Snippets/nmos.JPG)
  
  ![](Snippets/pmos.JPG)
+ 
+ ### CELL_TRANS CHARACTERISTICS
+ 
+ ![](Snippets/INV_TRANS.JPG)
