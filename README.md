@@ -133,7 +133,11 @@ After doing analysis and layout the parasitic extraction is done using the steps
   
   ![](Snippets/DAY3_INV_LAYOUT_1.png)
 
+ DRC tests: The main objective of this paper is to explain the various types of design rule checks (DRC) violation, their causes and how to fix the various design rule checks (DRC) at lower technology node on block level as well as full chip level implementation while meeting the design rule with respect to latest technology standards.
  
+ ![](Snippets/DRC_TEST.png)
+ 
+ ![](Snippets/DAY3_DRC_TESTS.png)
    
  
  
