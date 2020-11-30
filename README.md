@@ -142,6 +142,25 @@ After doing analysis and layout the parasitic extraction is done using the steps
  
  ### 4. STATIC TIMING ANALYSIS & CLOCK TREE SYNTHESIS
  
+ Inserting the standard cell into picorv32a and doing STA and CTS. 
+ 
+   ![](Snippets/DAY4_PORT_DECLARATION.png)
+   
+   
+   ![](Snippets/DAY4_PITCH_OFFSET.png)
+   
+   
+   ![](Snippets/DAY4_PLACEMENT.png)
+   
+   
+   magic command for placement.def file in the openlane_working_dir/openlane/designs/picorv32a/runs/run29/results/placement$ 
+   
+   
+         magic -T /home/chaitanya/Desktop/vsdflow/work/tools/openlane_working_dir/pdks/sky130A/libs.tech/magic/sky130A.tech lef read ../../tmp/merged.lef def read picorv32a.placement.def
+   
+   
+   ![](Snippets/DAY4_VSDINV_IN_PICORV.png)
+ 
  
  
  
