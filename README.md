@@ -9,7 +9,7 @@ An advanced workshop on Sky130 which deals with RTL to GDSII design flow. This w
    ### 5. ROUTING & SPEF EXTRACTION
 
 
-   ## 1.INTRODUCTION TO SoC & SYNTHESIS
+## 1.INTRODUCTION TO SoC & SYNTHESIS
    Brief about SoC/Processor architecture
    Overview of modules in SoC
    Nominclature of SoC as one of the packages QFN-48 ( Quad Flat No leads 48 pin) with typically size of 7mm x 7mm chip placed in middle of package connected to pins with wire bonds.
