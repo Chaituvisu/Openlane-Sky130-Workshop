@@ -2,14 +2,14 @@
 An advanced workshop on Sky130 which deals with RTL to GDSII design flow. This workshop helped me to explore on open source tools in Physical design. It gave a thorough understanding of SoC design flow using the open source EDA tools like Google's Skywater which is process design kit on 130nm. Workshop mainly deals with design and characterisation of own standard cell and generating netlist, GDSII flow from RTL. Netlist generation, logic synthesis, placement, floor planning, power planning, timing analysis and routing are done on own design. SPEF extraction, SDC files, library files, cell library files, timing library files and technology files are generated for full design flow. Timing modelling with ideal clock and real clock is done using delay tables, clock tree synthesis,  and signal integrity  is done. Main tools on which complete design flow goes are  OpenSTA, Tritonroute, Yosys, SPEF extractor, NGSPICE and OPENROAD. 
 
    # Contents:
-   ### 1. Introduction to SoC and Synthesis
-   ### 2. FLOORPLANNING  
+   ### 1. INTRODUCTION TO SoC & SYNTHESIS
+   ### 2. FLOORPLANNING & PLACEMENT 
    ### 3. STANDARD CELL_INVERTER LAYOUT & DRC
-   ### 4. Day 4
-   ### 5. Day 5
+   ### 4. STATIC TIMING ANALYSIS & CLOCK TREE SYNTHESIS
+   ### 5. ROUTING & SPEF EXTRACTION
 
 
-   ## 1.Introduction to SoC and Synthesis
+   ## 1.INTRODUCTION TO SoC & SYNTHESIS
    Brief about SoC/Processor architecture
    Overview of modules in SoC
    Nominclature of SoC as one of the packages QFN-48 ( Quad Flat No leads 48 pin) with typically size of 7mm x 7mm chip placed in middle of package connected to pins with wire bonds.
@@ -41,15 +41,40 @@ An advanced workshop on Sky130 which deals with RTL to GDSII design flow. This w
  
  ![](Snippets/10power_planning.jpg)
  
+   Before synthesis, we have to prepare the design where it merges both files - CELL level and TECH level into one.
+   First, preparation of the design in OpenLANE merges the technology LEF and cell LEF files. Tech LEF file contains layer definitions and a set of restricted design rules needed for PnR flow. The cell LEF  file has obstruction information of each standard cell needed to minimize DRC errors during PnR flow:
+   
+  Invoking Openlane using below commands in the file path:
+               
+               /home/chaitanya/Desktop/vsdflow/work/tools/openlane_working_dir/openlane/
+               
+   Below commands to invoke openlane:
+   
+                  docker run -it -v $(pwd):/openLANE_flow -v $PDK_ROOT:$PDK_ROOT -e PDK_ROOT=$PDK_ROOT -u $(id -u $USER):$(id -g $USER) openlane:rc2
+                  
+   /flow.tcl is the script which runs the OpenLANE flow and also we can run in autonomous mode. In order to run step wise we can use " -interactive" mode
+   
+               In bash: ./flow.tcl -interactive
+               
+   Below commands are used to prepare design and tag them to folder for further analysis.
+   
+               prep -design picorv32a -tag workshop
+               
  
  ![](Snippets/Day1flow_tcl.png)
+ 
+ 
+ In run folder we can see the merge file got created, where we get CELL & TECH level info.
+ 
+               /home/chaitanya/Desktop/vsdflow/work/tools/openlane_working_dir/openlane/designs/picorv32a/runs/run29_1
+ 
 
  ![](Snippets/Day1Synthesis.png)
  
  ![](Snippets/Day1Synthesis_1.png)
 
 
-## 2. FLOORPLANNING
+## 2. FLOORPLANNING & PLACEMENT 
 
 ![](Snippets/Day2_floorplan.png)
 
@@ -91,3 +116,14 @@ An advanced workshop on Sky130 which deals with RTL to GDSII design flow. This w
  ### STANDARD CELL- INVERTER_TRANS CHARACTERISTICS
  
  ![](Snippets/INV_TRANS.JPG)
+ 
+ 
+ 
+ ### 4. STATIC TIMING ANALYSIS & CLOCK TREE SYNTHESIS
+ 
+ 
+ 
+ 
+ 
+ 
+ ### 5. ROUTING & SPEF EXTRACTION
