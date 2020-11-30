@@ -160,6 +160,13 @@ After doing analysis and layout the parasitic extraction is done using the steps
    
    
    ![](Snippets/DAY4_VSDINV_IN_PICORV.png)
+   
+   
+  Clock tress synthesis is done after inserting standard cell into the design- picorv32a
+  
+  ![](Snippets/DAY4_CTS.png)
+  
+  
  
  
  
