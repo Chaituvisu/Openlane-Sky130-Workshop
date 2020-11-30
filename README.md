@@ -96,7 +96,7 @@ In the path we have to enter the command /openlane/designs/picorv32a/runs/run29/
 ![](Snippets/Day2_Floorplan_Vmetal.png)
 
 
-For IO_MODE, we have to enable the switch:
+For IO_MODE, we have to enable the switch: Enabling the IO pins using a switch with a parameter called  FP_IO_MODE
 
 ![](Snippets/DAY3_FLOORPLAN_IO_MODE_2.png)
 
@@ -110,25 +110,29 @@ For IO_MODE, we have to enable the switch:
    ### Git clone the standard cell from VSDSTDCELL design
    
    
-![](Snippets/GIT_CLONE_vsdstdcell.JPG)
+![](Snippets/DAY3_INV_LAYOUT_1.png)
 
-   ### Enabling the IO pins using a switch with a parameter called  FP_IO_MODE
+  
+  For analysing the inverter response by giving a pulse input at the input port A and plugging at output port Y.
+ here below in image we can see the process of runinng NGSPICE and plotting the response.
    
-   
-![](Snippets/FP_IO_MODE_ENABLE.JPG)
+![](Snippets/DAY3_INV_RUN_PLOT.png)
 
+After doing analysis and layout the parasitic extraction is done using the steps in the image.
 
-   ### Identifying Multiple layers of inverter in tcl command promt
-   
-![](Snippets/INV_LAYOUT_layers.JPG)
+               Commands:
+               
+                     % extractall
+                     % ext2spice cthresh 0 rthresh 0   //which extracts all parasitics from threshold 0
+                     % ext2spice   // which creates spice file for access.
+
+![](Snippets/DAY3_INV_SPICE_EXTRACTION.png)
 
 
   ### Identification of NMOS and PMOS in LAYOUT:
   
   ![](Snippets/DAY3_INV_LAYOUT_1.png)
-  
-  ![]()
- 
+
  
  ### STANDARD CELL- INVERTER_TRANS CHARACTERISTICS
  
