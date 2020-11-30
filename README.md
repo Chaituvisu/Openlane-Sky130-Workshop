@@ -114,7 +114,7 @@ For IO_MODE, we have to enable the switch: Enabling the IO pins using a switch w
 
   
   For analysing the inverter response by giving a pulse input at the input port A and plugging at output port Y.
- here below in image we can see the process of runinng NGSPICE and plotting the response.
+ here below in image we can see the process of runinng NGSPICE and plotting the response and STANDARD CELL- INVERTER_TRANS CHARACTERISTICS
    
 ![](Snippets/DAY3_INV_RUN_PLOT.png)
 
@@ -134,9 +134,9 @@ After doing analysis and layout the parasitic extraction is done using the steps
   ![](Snippets/DAY3_INV_LAYOUT_1.png)
 
  
- ### STANDARD CELL- INVERTER_TRANS CHARACTERISTICS
+   
  
- ![](Snippets/INV_TRANS.JPG)
+ 
  
  
  
