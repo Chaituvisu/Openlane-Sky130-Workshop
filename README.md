@@ -145,34 +145,43 @@ After doing analysis and layout the parasitic extraction is done using the steps
  Inserting the standard cell into picorv32a and doing STA and CTS. 
  
    ![](Snippets/DAY4_PORT_DECLARATION.png)
-   
-   
-   ![](Snippets/DAY4_PITCH_OFFSET.png)
-   
+    
    
    ![](Snippets/DAY4_PLACEMENT.png)
-   
-   
-   Clock tress synthesis is done after inserting standard cell into the design- picorv32a. After running floorplan and standard cell placement in OpenLANE we are ready to insert our clock tree for sequential elements in our design.
-  
-  ![](Snippets/DAY4_CTS.png)
   
    
+   Lef file gives info of IP input, output, power and ground . It protects IP
    magic command for placement.def file in the openlane_working_dir/openlane/designs/picorv32a/runs/run29/results/placement$ 
    
    
          magic -T /home/chaitanya/Desktop/vsdflow/work/tools/openlane_working_dir/pdks/sky130A/libs.tech/magic/sky130A.tech lef read ../../tmp/merged.lef def read picorv32a.placement.def
    
+  
    
+   The above file is nothing but used during routing stage. Routes are basically metal traces. Tracks can do P & R to routes in file:
+                  
+                        Li1  X 0.23 (x-origin)  0.46 (y-spacing)
+                        Li1  y 0.17 (y-origin)  0.34 (y-spacing)
+    
+   ![](Snippets/DAY4_TRACKS_INFO.png)
+   
+   ![](Snippets/DAY4_PITCH_OFFSET.png)
+                        
    ![](Snippets/DAY4_VSDINV_IN_PICORV.png)
    
    
+ Clock tress synthesis is done after inserting standard cell into the design- picorv32a. After running floorplan and standard cell placement in OpenLANE we are ready to insert our clock tree for sequential elements in our design.
  
+ In this stage clock buffers get added,we can check the folder in the path:
+ 
+                     openlane_working_dir/openlane/designs/picorv32a/runs/run29/results/synthesis/picorv32a.synthesis_cts.v
+ 
+                     
+       
   
- 
- 
- 
- 
+  ![](Snippets/DAY4_CTS.png)
+  
+  
  
  
  ### 5. ROUTING & SPEF EXTRACTION
