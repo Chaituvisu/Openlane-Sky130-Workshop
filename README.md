@@ -176,3 +176,19 @@ After doing analysis and layout the parasitic extraction is done using the steps
  
  
  ### 5. ROUTING & SPEF EXTRACTION
+ 
+ 
+ After generating our clock tree network and verifying post routing STA checks we are ready to generate the power distribution network in OpenLANE. For standard cell rows we need power and ground. Here we can see the std cell rail width and pitch. At this width & pitch we have to plug the inverter where it matches the power rails width & pitch in order to get connection with power. From power pads we get to straps and rails down to std cells. Straps are at metal 4 & metal 5.
+ 
+                        % run_routing
+                        
+   Routing is catergorised into two: a) Fast route b) Detailed route.
+   Fast route is followed by detailed route that it needs to realise segments & VIA in accordance with global route.
+   
+   Now after routing parasitics come into picture in order to extract them an extractor is needed.  SPEF EXTRACTOR is  present in  /work/tools/SPEF EXTRACTOR
+   
+   using the command spef file is extracted:
+   
+                  $ python3 main.py  /home/chaitanya/Desktop/work/tools/openlane_working_dir/openlane/designs/picorv32a/runs/run29_1/tmp/merged.lef  def /home/chaitanya/Desktop/work/tools/openlane_working_dir/openlane/designs/picorv32a/runs/run29_1/results/routing/picorv32a.def
+                  
+     SPEF file is created in same location as of def file in routing folder.
