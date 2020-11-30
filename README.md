@@ -76,9 +76,22 @@ An advanced workshop on Sky130 which deals with RTL to GDSII design flow. This w
 
 ## 2. FLOORPLANNING & PLACEMENT 
 
+In order to find the size of chip/block and Aspect ratio, the core area and IO core spacing and Floor Plan and Power Network with horizontal metal layer. IO Placement/Pin placement and I/O Pin Rings for Blocks. Using the command in openlane floorplan is run.
+
+                     % run_floorplan
+
 ![](Snippets/Day2_floorplan.png)
 
 ![](Snippets/Day2_Floorplan_Area.png)
+
+After floorplan is run ,magic command for floorplan.def file :
+               
+In the path we have to enter the command /openlane/designs/picorv32a/runs/run29/results/floorplan$ 
+         
+         magic -T /home/chaitanya/Desktop/vsdflow/work/tools/openlane_working_dir/pdks/sky130A/libs.tech/magic/sky130A.tech lef read ../../tmp/merged.lef def read picorv32a.floorplan.def
+         
+ For viewing metal layers and pin we have to zoom in for the pins using  'z' and for zoom out 'shift+z'
+
 
 ![](Snippets/Day2_Floorplan_Vmetal.png)
 
