@@ -95,6 +95,11 @@ In the path we have to enter the command /openlane/designs/picorv32a/runs/run29/
 
 ![](Snippets/Day2_Floorplan_Vmetal.png)
 
+
+For IO_MODE, we have to enable the switch:
+
+![](Snippets/DAY3_FLOORPLAN_IO_MODE_2.png)
+
 ![](Snippets/Day2_Floorplan_HMetal.png)
 
 ![](Snippets/Day2_Floorplan_STDCELL.png)
@@ -119,11 +124,10 @@ In the path we have to enter the command /openlane/designs/picorv32a/runs/run29/
 
 
   ### Identification of NMOS and PMOS in LAYOUT:
-   
-   
- ![](Snippets/nmos.JPG)
- 
- ![](Snippets/pmos.JPG)
+  
+  ![](Snippets/DAY3_INV_LAYOUT_1.png)
+  
+  ![]()
  
  
  ### STANDARD CELL- INVERTER_TRANS CHARACTERISTICS
